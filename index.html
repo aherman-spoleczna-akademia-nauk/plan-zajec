@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Plan zajęć – zima 2026/27</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<header>
+ <div class="label">Semestr zimowy 2026/27 · Łódź · Informatyka inż. (laboratoria)</div>
+ <h1>Plan zajęć – mgr inż. Andrzej Herman</h1>
+ <div class="meta"><span><b>Dzienne:</b> czwartki</span><span><b>Zaoczne (zjazdy B):</b> soboty i niedziele</span><span><b>Sala:</b> P-42, ul. Kilińskiego 98</span></div>
+</header>
+<section class="stats" id="stats"></section>
+<div class="toolbar">
+ <div class="seg" role="group" aria-label="Tryb studiów">
+  <button type="button" data-f="all" aria-pressed="true">Wszystkie</button>
+  <button type="button" data-f="D" aria-pressed="false">Dzienne</button>
+  <button type="button" data-f="Z" aria-pressed="false">Zaoczne</button>
+ </div>
+ <label><input type="checkbox" id="hidePast"> Ukryj minione dni</label>
+</div>
+<section><div class="label" style="margin-bottom:8px">Kalendarz</div><div class="months" id="months"></div>
+<div class="key"><span style="--k:color-mix(in srgb,var(--dz) 35%,transparent)">studia dzienne</span><span style="--k:color-mix(in srgb,var(--za) 40%,transparent)">zjazdy B (zaoczne)</span><span style="--k:transparent;outline:0;color:var(--cancel)">czerwone daty – zjazdy egzaminacyjne</span></div></section>
+<section><div class="label" style="margin-bottom:8px">Przedmioty</div><div class="legend" id="legend"></div></section>
+<section class="agenda"><div class="label">Zajęcia dzień po dniu</div><div id="agenda" class="agenda"></div></section>
+<p class="foot">Dzienne: 8.10 zajęcia odwołane; „Projektowanie i programowanie z użyciem wzorców projektowych” odrabiane 12.11. Zaoczne: zjazdy 9 (6–7.02) i 10 (13–14.02) – egzaminacyjne, 15–28.02 – przerwa. Źródło: plany „HERMAN ANDRZEJ D” i „HERMAN ANDRZEJ B”.</p>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
