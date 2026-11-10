@@ -65,7 +65,8 @@ W repozytorium: **Settings → Pages → Deploy from a branch → `main` / `(roo
 plan-zajec/
 ├── index.html   # układ strony: nagłówek, statystyki, filtry, kalendarz, agenda
 ├── style.css    # wygląd, kolory, tryb ciemny, widok mobilny
-└── app.js       # dane planu i logika renderowania
+├── app.js       # dane planu i logika renderowania
+└── favicon.svg  # ikona strony (kalendarz) w karcie przeglądarki
 ```
 
 ## ✏️ Edycja planu
